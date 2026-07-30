@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CARZYYY | Register</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="stylesheet"
+          href="register.css">
+
+</head>
+
+<body>
+<div id="loader"></div>
+<!--==========================
+        NAVBAR
+===========================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h1>CAR<span>ZYYY</span></h1>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="cars.html">Cars</a></li>
+
+            <li><a href="booking.html">Booking</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="register.html"
+                   class="active">Register</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!--==========================
+        HERO
+===========================-->
+
+<section class="register-hero">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Create Your Account
+
+        </h1>
+
+        <p>
+
+            Join CARZYYY and start your journey today
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+      REGISTER SECTION
+===========================-->
+
+<section class="register-section">
+
+<div class="register-container">
+
+<!--==========================
+        LEFT IMAGE
+===========================-->
+
+<div class="register-image">
+
+    <img src="images/register-car.png"
+         alt="Luxury Car">
+
+</div>
+
+<!--==========================
+      REGISTER CARD
+===========================-->
+
+<div class="register-card">
+
+    <h2>
+
+        Register
+
+    </h2>
+
+    <p>
+
+        Create your CARZYYY account
+
+    </p>
+
+    <form id="registerForm">
+
+        <div class="input-box">
+
+            <label>Full Name</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Email Address</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Phone Number</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required>
+
+            </div>
+
+        </div>
+                <div class="input-box">
+
+            <label>Username</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-user-tag"></i>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Choose a username"
+                    required>
+
+            </div>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Password</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                    required>
+
+                <i class="fa-solid fa-eye toggle-password"></i>
+
+            </div>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Confirm Password</label>
+
+            <div class="input-field">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required>
+
+                <i class="fa-solid fa-eye toggle-password"></i>
+
+            </div>
+
+        </div>
+
+        <!--==========================
+            TERMS & CONDITIONS
+        ===========================-->
+
+        <div class="register-options">
+
+            <label class="terms-check">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    required>
+
+                I agree to the
+
+                <a href="#">Terms & Conditions</a>
+
+            </label>
+
+        </div>
+
+        <!--==========================
+            REGISTER BUTTON
+        ===========================-->
+
+        <button
+            type="submit"
+            class="register-btn">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            Create Account
+
+        </button>
+
+        <!--==========================
+                DIVIDER
+        ===========================-->
+
+        <div class="divider">
+
+            <span>OR</span>
+
+        </div>
+
+        <!--==========================
+            GOOGLE SIGNUP
+        ===========================-->
+
+        <button
+            type="button"
+            class="google-btn">
+
+            <i class="fa-brands fa-google"></i>
+
+            Sign Up with Google
+
+        </button>
+
+        <!--==========================
+                LOGIN LINK
+        ===========================-->
+
+        <div class="login-link">
+
+            <p>
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login Here
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </form>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================
+        WHY JOIN CARZYYY
+===========================-->
+
+<section class="why-register">
+
+    <h2>Why Join CARZYYY?</h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Wide Range of Cars</h3>
+
+            <p>
+
+                Rent hatchbacks, sedans, SUVs, luxury cars and electric vehicles across Kerala.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-tags"></i>
+
+            <h3>Affordable Prices</h3>
+
+            <p>
+
+                Enjoy competitive daily rental rates with no hidden charges.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>24×7 Support</h3>
+
+            <p>
+
+                Our dedicated support team is always ready to help you.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        FOOTER
+===========================-->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>CAR<span>ZYYY</span></h2>
+
+            <p>
+
+                Premium Car Rental Service in Kerala.
+                Drive Your Dream with Comfort and Confidence.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="cars.html">Cars</a></li>
+
+                <li><a href="booking.html">Booking</a></li>
+
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Kozhikode, Kerala
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-phone"></i>
+
+                +91 98765 43210
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                info@carzyyy.com
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social">
+
+                <i class="fab fa-facebook-f"></i>
+
+                <i class="fab fa-instagram"></i>
+
+                <i class="fab fa-x-twitter"></i>
+
+                <i class="fab fa-linkedin"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 CARZYYY. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!--==========================
+        JAVASCRIPT
+===========================-->
+
+<script src="app.js"></script>
+
+<script src="auth.js"></script>
+
+</body>
+
+</html>

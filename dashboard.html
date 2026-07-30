@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CARZYYY | Admin Dashboard</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+<!--==========================
+        SIDEBAR
+===========================-->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <h2>CAR<span>ZYYY</span></h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+
+            <a href="#">
+
+                <i class="fa-solid fa-gauge"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#cars">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                Cars
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#bookings">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                Bookings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#users">
+
+                <i class="fa-solid fa-users"></i>
+
+                Users
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="index.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Website
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</aside>
+
+<!--==========================
+        MAIN CONTENT
+===========================-->
+
+<div class="main-content">
+
+<header class="topbar">
+
+    <h1>
+
+        Admin Dashboard
+
+    </h1>
+
+    <div class="admin-profile">
+
+        <span id="adminName">Admin</span>
+
+        <span>Administrator</span>
+
+    </div>
+
+</header>
+
+<!--==========================
+      DASHBOARD CARDS
+===========================-->
+
+<section class="dashboard-cards">
+
+<div class="card">
+
+    <i class="fa-solid fa-car-side"></i>
+
+    <h2 id="totalCars">
+
+
+    </h2>
+
+    <p>Total Cars</p>
+
+</div>
+
+<div class="card">
+
+    <i class="fa-solid fa-calendar-check"></i>
+
+    <h2 id="totalBookings">
+
+
+    </h2>
+
+    <p>Total Bookings</p>
+
+</div>
+
+<div class="card">
+
+    <i class="fa-solid fa-users"></i>
+
+    <h2 id="totalUsers">
+
+    
+
+    </h2>
+
+    <p>Registered Users</p>
+
+</div>
+
+<div class="card">
+
+    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+    <h2 id="totalRevenue">
+
+    
+
+    </h2>
+
+    <p>Total Revenue</p>
+
+</div>
+
+</section>
+<!--==========================
+      CAR MANAGEMENT
+===========================-->
+
+<section class="table-section" id="cars">
+
+    <div class="section-header">
+
+        <h2>
+
+            Car Management
+
+        </h2>
+
+        <div class="header-actions">
+
+            <input
+                type="text"
+                id="searchCar"
+                placeholder="Search cars...">
+
+            <button id="addCarBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add New Car
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="table-container">
+
+        <table id="carTable">
+
+            <thead>
+
+            
+
+            </thead>
+
+            <tbody>
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+<!--==========================
+      BOOKING MANAGEMENT
+===========================-->
+
+<section class="table-section" id="bookings">
+
+    <div class="section-header">
+
+        <h2>
+
+            Booking Management
+
+        </h2>
+
+    </div>
+
+    <div class="table-container">
+
+        <table id="bookingTable">
+
+            <thead>
+
+              
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!--==========================
+      USER MANAGEMENT
+===========================-->
+
+<section class="table-section" id="users">
+
+    <div class="section-header">
+
+        <h2>
+
+            Registered Users
+
+        </h2>
+
+    </div>
+
+    <div class="table-container">
+
+        <table id="userTable">
+
+            <thead>
+
+
+            </thead>
+
+            <tbody>
+
+          
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!--==========================
+      RECENT ACTIVITY
+===========================-->
+
+<section class="activity-section">
+
+    <h2>
+
+        Recent Activity
+
+    </h2>
+
+    <div class="activity-list">
+
+        <div class="activity-item">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div>
+
+                <h4>
+
+                    New Booking Received
+
+                </h4>
+
+                <p>
+
+                    Rahul booked Toyota Fortuner.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="activity-item">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            <div>
+
+                <h4>
+
+                    New User Registered
+
+                </h4>
+
+                <p>
+
+                    Arjun Nair created a new account.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="activity-item">
+
+            <i class="fa-solid fa-car"></i>
+
+            <div>
+
+                <h4>
+
+                    New Car Added
+
+                </h4>
+
+                <p>
+
+                    Hyundai Verna was added to the fleet.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================
+        ADD / EDIT CAR MODAL
+===========================-->
+
+<div class="modal" id="carModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2 id="modalTitle">
+
+                Add New Car
+
+            </h2>
+
+            <span class="close-modal">&times;</span>
+
+        </div>
+
+        <form id="carForm">
+
+            <div class="form-group">
+
+                <label>Car Name</label>
+
+                <input
+                    type="text"
+                    id="carName"
+                    placeholder="Enter car name">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Brand</label>
+
+                <input
+                    type="text"
+                    id="carBrand"
+                    placeholder="Enter brand">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Fuel Type</label>
+
+                <select id="fuelType">
+
+                    <option>Petrol</option>
+                    <option>Diesel</option>
+                    <option>Electric</option>
+                    <option>Hybrid</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Transmission</label>
+
+                <select id="transmission">
+
+                    <option>Automatic</option>
+                    <option>Manual</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Seats</label>
+
+                <input
+                    type="number"
+                    id="seats"
+                    placeholder="Number of seats">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Price / Day (₹)</label>
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Rental price">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Image URL</label>
+
+                <input
+                    type="text"
+                    id="image"
+                    placeholder="images/car.jpg">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Status</label>
+
+                <select id="status">
+
+                    <option>Available</option>
+                    <option>Rented</option>
+
+                </select>
+
+            </div>
+
+            <div class="modal-buttons">
+
+                <button
+                    type="submit"
+                    class="save-btn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Car
+
+                </button>
+
+                <button
+                    type="button"
+                    class="cancel-btn">
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!--==========================
+        FOOTER
+===========================-->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 CAR<span>ZYYY</span> Admin Dashboard
+
+    </p>
+
+</footer>
+
+</div>
+
+<!--==========================
+        JAVASCRIPT
+===========================-->
+<script src="app.js"></script>
+<script src="auth.js"></script>
+<script src="dashboard.js"></script>
+<script src="crud.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARZYYY | Drive Your Dream</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cars.css">
+
+</head>
+<body>
+<div id="loader"></div>
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+<div class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+        <div class="logo">
+            <h1>CAR<span>ZYYY</span></h1>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="#loc">Locations</a></li>
+            
+            <li><a href="#why">About</a></li>
+            <li><a href="#con">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="register.html" class="register-btn">
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <h1>
+                Drive Your Dream
+                <br>
+                with CARZYYY
+            </h1>
+
+            <p>
+                Rent premium cars anytime, anywhere in Kerala.
+                Fast booking. Affordable prices. Safe rides.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+<div class="search-box">
+
+<h2>Book Your Ride</h2>
+
+<form id="searchForm">
+
+<div class="input-box">
+
+<label>Pick-up Location</label>
+
+<select>
+
+<option>Kozhikode</option>
+<option>Kannur</option>
+<option>Malappuram</option>
+<option>Wayanad</option>
+<option>Kochi</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>Pick-up Date</label>
+
+<input type="date">
+
+</div>
+
+<div class="input-box">
+
+<label>Pick-up Time</label>
+
+<input type="time">
+
+</div>
+
+<div class="input-box">
+
+<label>Return Date</label>
+
+<input type="date">
+
+</div>
+
+<div class="input-box">
+
+<label>Return Time</label>
+
+<input type="time">
+
+</div>
+
+<div class="input-box">
+
+<a href="cars.html" type="submit">
+
+<i class="fa-solid fa-car"></i>
+
+Search Cars
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURED CARS ================= -->
+<section class="featured">
+
+<h2 class="section-title">
+Featured Cars
+</h2>
+<div class="car-container" id="carContainer"></div>
+
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us" id="why">
+
+<h2>
+Why Choose CARZYYY?
+</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-car-side"></i>
+
+<h3>Premium Cars</h3>
+
+<p>
+Latest and luxury vehicles.
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h3>Affordable Pricing</h3>
+
+<p>
+Best rental prices in Kerala.
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24x7 Support</h3>
+
+<p>
+We're here whenever you need us.
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Multiple Locations</h3>
+
+<p>
+Available across Kerala.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LOCATIONS ================= -->
+
+<section class="locations" id="loc">
+
+<h2>
+Popular Locations
+</h2>
+
+<div class="location-grid">
+
+<div>Kozhikode</div>
+
+<div>Kannur</div>
+
+<div>Wayanad</div>
+
+<div>Malappuram</div>
+
+<div>Kochi</div>
+
+<div>Thrissur</div>
+
+<div>Trivandrum</div>
+
+<div>Palakkad</div>
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+<h2>
+Happy Customers
+</h2>
+
+<div class="testimonial-container">
+
+<div class="testimonial">
+
+<p>
+★★★★★
+</p>
+
+<p>
+
+"Excellent service.
+Booking was super easy."
+
+</p>
+
+<h4>
+- Rahul
+</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+★★★★★
+</p>
+
+<p>
+
+"Clean cars and affordable pricing."
+
+</p>
+
+<h4>
+
+- Anjali
+
+</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+★★★★★
+
+</p>
+
+<p>
+
+"The best rental service in Kozhikode."
+
+</p>
+
+<h4>
+
+- Mohammed
+
+</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<h2>
+
+Ready to Ride?
+
+</h2>
+
+<p>
+
+Book your favourite car today with CARZYYY.
+
+</p>
+
+<a href="cars.html">
+
+Explore Cars
+
+</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content" id="con">
+
+<div>
+
+<h2>CAR<span>ZYYY</span></h2>
+
+<p>
+
+Drive Smart.
+Drive Safe.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="cars.html">Cars</a></li>
+
+<li><a href="#">Offers</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Kozhikode, Kerala
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 7012938103
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+arshidabdulla58@gmail.com
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<div class="social">
+<a href="">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://www.instagram.com/arshi_tk_">
+<i class="fab fa-instagram"></i>
+</a>
+<i class="fab fa-x-twitter"></i>
+
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 CARZYYY. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="app.js"></script>
+<script src="cars.js"></script>
+
+</body>
+</html>

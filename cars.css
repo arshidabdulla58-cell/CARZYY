@@ -1,0 +1,975 @@
+/*====================================
+        CARS PAGE HERO
+====================================*/
+
+.cars-hero{
+    height:50vh;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("../images/cars-banner.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.cars-hero h1{
+    font-size:55px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.cars-hero p{
+    font-size:18px;
+    color:#ddd;
+}
+
+/*====================================
+        SEARCH SECTION
+====================================*/
+
+.search-section{
+
+    margin-top:-70px;
+    position:relative;
+    z-index:100;
+
+}
+
+.search-box{
+
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(20px);
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    padding:35px;
+
+}
+
+.search-box h2{
+
+    text-align:center;
+    margin-bottom:30px;
+    color:#111;
+    font-size:32px;
+
+}
+
+.search-box form{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+
+}
+
+.input-box{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.input-box label{
+
+    margin-bottom:8px;
+    font-weight:600;
+    color:#222;
+
+}
+
+.input-box select,
+.input-box input{
+
+    height:50px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:0 15px;
+    outline:none;
+    transition:.3s;
+
+}
+
+.input-box select:focus,
+.input-box input:focus{
+
+    border-color:#FFD100;
+
+}
+
+.input-box button{
+
+    margin-top:30px;
+    height:50px;
+    border:none;
+    border-radius:10px;
+    background:#FFD100;
+    color:#111;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.input-box button:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 20px rgba(0,0,0,.15);
+
+}
+
+/*====================================
+        FILTER BUTTONS
+====================================*/
+
+.filter-buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:45px;
+    flex-wrap:wrap;
+
+}
+
+.filter-btn{
+
+    border:none;
+    background:#fff;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.filter-btn:hover{
+
+    background:#FFD100;
+    color:#111;
+    transform:translateY(-3px);
+
+}
+
+.filter-btn.active{
+
+    background:#FFD100;
+    color:#111;
+
+}
+
+/*====================================
+        AVAILABLE CARS
+====================================*/
+
+.featured{
+
+    background:#f8f9fa;
+
+}
+
+.featured .section-title{
+
+    margin-bottom:25px;
+
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+.cars-hero h1{
+
+    font-size:42px;
+
+}
+
+.search-box{
+
+    padding:25px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cars-hero{
+
+    height:40vh;
+
+}
+
+.cars-hero h1{
+
+    font-size:34px;
+
+}
+
+.cars-hero p{
+
+    font-size:16px;
+
+}
+
+.filter-buttons{
+
+    gap:10px;
+
+}
+
+.filter-btn{
+
+    padding:10px 18px;
+    font-size:14px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.search-box{
+
+    padding:20px;
+
+}
+
+.search-box h2{
+
+    font-size:24px;
+
+}
+
+.cars-hero h1{
+
+    font-size:28px;
+
+}
+
+}
+/*====================================
+        PREMIUM CAR CARDS
+====================================*/
+
+.car-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:35px;
+    margin-top:40px;
+}
+
+.car-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    position:relative;
+}
+
+.car-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+/*====================================
+        IMAGE
+====================================*/
+
+.car-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.car-card:hover img{
+    transform:scale(1.08);
+}
+
+/*====================================
+        PRICE BADGE
+====================================*/
+
+.car-card h4{
+
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    background:#FFD100;
+    color:#111;
+
+    padding:10px 16px;
+
+    border-radius:25px;
+
+    font-size:18px;
+    font-weight:700;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+/*====================================
+        CAR NAME
+====================================*/
+
+.car-card h3{
+
+    margin:20px;
+    margin-bottom:10px;
+
+    font-size:28px;
+    color:#111;
+
+}
+
+/*====================================
+        DETAILS
+====================================*/
+
+.car-card p{
+
+    margin:10px 20px;
+    color:#555;
+    font-size:15px;
+
+}
+
+.car-card p i{
+
+    width:25px;
+    color:#FFD100;
+
+}
+
+/*====================================
+        BOOK BUTTON
+====================================*/
+
+.book-btn{
+
+    display:block;
+
+    margin:25px 20px;
+
+    text-align:center;
+
+    background:#111;
+    color:#fff;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.book-btn:hover{
+
+    background:#FFD100;
+    color:#111;
+
+}
+
+/*====================================
+        HOVER BORDER
+====================================*/
+
+.book-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:0;
+    height:5px;
+
+    background:#FFD100;
+
+    transition:.4s;
+
+}
+
+.book-btn:hover::before{
+
+    width:100%;
+
+}
+
+/*====================================
+        FEATURE ICONS
+====================================*/
+
+.book-btn p{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.book-btn:last-of-type{
+
+    margin-bottom:25px;
+
+}
+
+/*====================================
+        CARD ANIMATION
+====================================*/
+
+.book-btn{
+
+    animation:fadeCard .8s ease;
+
+}
+
+@keyframes fadeCard{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+.car-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.car-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.book-btn h3{
+
+    font-size:24px;
+
+}
+
+.book-btn h4{
+
+    font-size:16px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.book-btn img{
+
+    height:200px;
+
+}
+
+.book-btn{
+
+    border-radius:15px;
+
+}
+
+}
+/*====================================
+        RATING BADGE
+====================================*/
+
+.car-card{
+    position:relative;
+}
+
+.rating-badge{
+
+    position:absolute;
+    top:18px;
+    left:18px;
+
+    background:#ffffff;
+    color:#111;
+
+    padding:8px 14px;
+
+    border-radius:25px;
+
+    font-size:14px;
+    font-weight:600;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+}
+
+.rating-badge i{
+    color:gold;
+}
+
+/*====================================
+        FAVORITE BUTTON
+====================================*/
+
+.favorite-btn{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.favorite-btn i{
+
+    color:#999;
+    font-size:18px;
+
+}
+
+.favorite-btn:hover{
+
+    background:#ff4d4d;
+
+}
+
+.favorite-btn:hover i{
+
+    color:#fff;
+
+}
+
+/*====================================
+        CAR INFO SECTION
+====================================*/
+
+.car-info{
+
+    padding:22px;
+
+}
+
+.car-info h3{
+
+    margin-bottom:10px;
+
+}
+
+.car-info p{
+
+    margin:8px 0;
+
+}
+
+/*====================================
+        CAR FEATURES
+====================================*/
+
+.car-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin:20px 0;
+
+}
+
+.car-features span{
+
+    background:#f5f5f5;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:#444;
+
+}
+
+.car-features span i{
+
+    color:#FFD100;
+    margin-right:6px;
+
+}
+
+/*====================================
+        PRICE SECTION
+====================================*/
+
+.price-section{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+.price{
+
+    font-size:28px;
+    font-weight:700;
+    color:#111;
+
+}
+
+.price small{
+
+    font-size:15px;
+    color:#777;
+
+}
+
+/*====================================
+        PAGINATION
+====================================*/
+
+.pagination-section{
+
+    padding:40px 8%;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.pagination{
+
+    display:flex;
+    gap:15px;
+
+}
+
+.page-btn{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.page-btn:hover{
+
+    background:#FFD100;
+
+}
+
+.page-btn.active{
+
+    background:#FFD100;
+
+}
+
+/*====================================
+        SECTION SPACING
+====================================*/
+
+.featured{
+
+    padding-top:70px;
+    padding-bottom:80px;
+
+}
+
+/*====================================
+        HOVER EFFECTS
+====================================*/
+
+.car-card:hover .price{
+
+    color:#FFD100;
+
+}
+
+.car-card:hover h3{
+
+    color:#FFD100;
+
+}
+
+/*====================================
+        BUTTON EFFECT
+====================================*/
+
+.car-card a{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.car-card a::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100%;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transform:skewX(-25deg);
+
+    transition:.5s;
+
+}
+
+.car-card a:hover::before{
+
+    left:120%;
+
+}
+
+/*====================================
+        SCROLL ANIMATION
+====================================*/
+
+.car-card{
+
+    opacity:0;
+
+    animation:fadeUp .8s forwards;
+
+}
+
+.car-card:nth-child(1){animation-delay:.1s;}
+.car-card:nth-child(2){animation-delay:.2s;}
+.car-card:nth-child(3){animation-delay:.3s;}
+.car-card:nth-child(4){animation-delay:.4s;}
+.car-card:nth-child(5){animation-delay:.5s;}
+.car-card:nth-child(6){animation-delay:.6s;}
+.car-card:nth-child(7){animation-delay:.7s;}
+.car-card:nth-child(8){animation-delay:.8s;}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================
+        MOBILE RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+.price{
+
+    font-size:24px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.car-features{
+
+    grid-template-columns:1fr;
+
+}
+
+.favorite-btn{
+
+    width:40px;
+    height:40px;
+
+}
+
+.rating-badge{
+
+    font-size:13px;
+
+}
+
+.page-btn{
+
+    width:42px;
+    height:42px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.price{
+
+    font-size:22px;
+
+}
+
+.pagination{
+
+    gap:8px;
+
+}
+
+.page-btn{
+
+    width:38px;
+    height:38px;
+    font-size:14px;
+
+}
+
+}
+/*====================================
+        FILTER SECTION
+====================================*/
+
+.filter-container{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin:40px auto;
+
+}
+
+.filter-container input,
+.filter-container select{
+
+    padding:12px 18px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+    min-width:220px;
+
+    transition:.3s;
+
+}
+
+.filter-container input:focus,
+.filter-container select:focus{
+
+    border-color:#FFD100;
+
+    box-shadow:0 0 8px rgba(255,209,0,.3);
+
+}
+.disabled-btn{
+
+    background:#999 !important;
+
+    cursor:not-allowed;
+
+}
+
+.disabled-btn:hover{
+
+    transform:none;
+
+}
+/*====================================
+        END OF CARS.CSS
+====================================*/

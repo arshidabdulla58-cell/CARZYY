@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CARZYYY | Premium Cars</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="cars.css">
+
+</head>
+
+<body>
+<div id="loader"></div>
+<!-- =========================
+        NAVBAR
+========================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h1>CAR<span>ZYYY</span></h1>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="cars.html" class="active">Cars</a></li>
+
+           
+
+           
+
+            <li><a href="#why">About</a></li>
+
+            <li><a href="#con">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="register.html" class="register-btn">
+
+                Register
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- =========================
+        HERO
+========================== -->
+
+<section class="cars-hero">
+
+    <div>
+
+        <h1>
+
+            Find Your Perfect Ride
+
+        </h1>
+
+        <p>
+
+            Premium Car Rentals Across Kerala
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        SEARCH
+========================== -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <h2>
+
+            Search Available Cars
+
+        </h2>
+
+        <form id="carSearchForm">
+
+            <div class="input-box">
+
+                <label>Pickup Location</label>
+
+                <select id="location">
+
+                    <option>Kozhikode</option>
+
+                    <option>Kochi</option>
+
+                    <option>Kannur</option>
+
+                    <option>Malappuram</option>
+
+                    <option>Wayanad</option>
+
+                    <option>Thrissur</option>
+
+                    <option>Palakkad</option>
+
+                    <option>Trivandrum</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Car Category</label>
+
+                <select id="category">
+
+                    <option>All Cars</option>
+
+                    <option>SUV</option>
+
+                    <option>Sedan</option>
+
+                    <option>Luxury</option>
+
+                    <option>Hatchback</option>
+
+                    <option>Electric</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Fuel Type</label>
+
+                <select id="fuel">
+
+                    <option>All</option>
+
+                    <option>Petrol</option>
+
+                    <option>Diesel</option>
+
+                    <option>Electric</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Transmission</label>
+
+                <select id="transmission">
+
+                    <option>All</option>
+
+                    <option>Automatic</option>
+
+                    <option>Manual</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Sort By</label>
+
+                <select id="sort">
+
+                    <option>Featured</option>
+
+                    <option>Price Low to High</option>
+
+                    <option>Price High to Low</option>
+
+                    <option>Highest Rated</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- =========================
+      AVAILABLE CARS
+========================== -->
+
+<section class="featured">
+
+    <h2 class="section-title">
+
+        Explore Our Fleet
+
+    </h2>
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active">
+
+            All
+
+        </button>
+
+        <button class="filter-btn">
+
+            SUV
+
+        </button>
+
+        <button class="filter-btn">
+
+            Sedan
+
+        </button>
+
+        <button class="filter-btn">
+
+            Luxury
+
+        </button>
+
+        <button class="filter-btn">
+
+            Hatchback
+
+        </button>
+
+        <button class="filter-btn">
+
+            Electric
+
+        </button>
+
+    </div>
+<div class="filter-container">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search cars...">
+
+    <select id="brandFilter">
+
+        <option value="All">All Brands</option>
+        <option value="Toyota">Toyota</option>
+        <option value="BMW">BMW</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Mahindra">Mahindra</option>
+
+    </select>
+
+    <select id="fuelFilter">
+
+        <option value="All">All Fuel</option>
+        <option value="Petrol">Petrol</option>
+        <option value="Diesel">Diesel</option>
+        <option value="Electric">Electric</option>
+        <option value="Hybrid">Hybrid</option>
+
+    </select>
+
+    <select id="transmissionFilter">
+
+        <option value="All">All Transmission</option>
+        <option value="Automatic">Automatic</option>
+        <option value="Manual">Manual</option>
+
+    </select>
+
+</div>
+
+<div class="car-container" id="carContainer"></div>
+    <!-- CARS START HERE -->
+
+    
+            <!-- ================= CAR 1 ================= -->
+
+   
+
+</section>
+
+<!-- ================= PAGINATION ================= -->
+
+<section class="pagination-section">
+
+    <div class="pagination">
+
+        <a href="#" class="page-btn active">1</a>
+        <a href="#" class="page-btn">2</a>
+        <a href="#" class="page-btn">3</a>
+
+        <a href="#" class="page-btn">
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us" id="why">
+
+    <h2>Why Choose CARZYYY?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Affordable Pricing</h3>
+
+            <p>
+                Best rental prices with no hidden charges.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-car-side"></i>
+
+            <h3>Premium Cars</h3>
+
+            <p>
+                Luxury, SUVs, Sedans and Electric vehicles.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>24×7 Support</h3>
+
+            <p>
+                Friendly customer support anytime.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>Across Kerala</h3>
+
+            <p>
+                Pickup & Drop available in Kozhikode, Kochi, Kannur and more.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content" id="con">
+
+        <div>
+
+            <h2>CAR<span>ZYYY</span></h2>
+
+            <p>
+                Drive Your Dream with Kerala's trusted premium car rental service.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="cars.html">Cars</a></li>
+
+                <li><a href="booking.html">Booking</a></li>
+
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Kozhikode, Kerala</p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 7012938103</p>
+
+            <p><i class="fa-solid fa-envelope"></i> arshidabdulla58.com</p>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social">
+
+                <i class="fab fa-facebook-f"></i>
+
+                <a href="https://www.instagram.com/arshi_tk_">
+                    <i class="fab fa-instagram"></i>
+                                 </a>
+
+                <i class="fab fa-x-twitter"></i>
+
+                <i class="fab fa-linkedin"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 CARZYYY. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="app.js"></script>
+
+<script src="cars.js"></script>
+
+</body>
+
+</html>
