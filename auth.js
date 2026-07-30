@@ -196,7 +196,7 @@ function loginUser(event){
 
     /*============ ADMIN LOGIN ============*/
 
-    if(username === "admin" && password === "admin123"){
+    if(username === "admin" && password === "arshid786"){
 
         const admin = {
 
