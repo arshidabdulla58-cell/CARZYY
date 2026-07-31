@@ -2,27 +2,9 @@
         CARS PAGE HERO
 ====================================*/
 
-.cars-hero{
-    height:50vh;
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-    url("../images/cars-banner.jpg") center center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:#fff;
-}
 
-.cars-hero h1{
-    font-size:55px;
-    font-weight:700;
-    margin-bottom:15px;
-}
 
-.cars-hero p{
-    font-size:18px;
-    color:#ddd;
-}
+
 
 /*====================================
         SEARCH SECTION
@@ -184,11 +166,7 @@
 
 @media(max-width:992px){
 
-.cars-hero h1{
 
-    font-size:42px;
-
-}
 
 .search-box{
 
@@ -202,21 +180,11 @@
 
 .cars-hero{
 
-    height:40vh;
+    height:80vh;
 
 }
 
-.cars-hero h1{
 
-    font-size:34px;
-
-}
-
-.cars-hero p{
-
-    font-size:16px;
-
-}
 
 .filter-buttons{
 
@@ -247,11 +215,7 @@
 
 }
 
-.cars-hero h1{
 
-    font-size:28px;
-
-}
 
 }
 /*====================================
@@ -969,6 +933,11 @@
 
     transform:none;
 
+}
+.back{
+    background-image: url("https://img.sanishtech.com/u/998fecee0bd48d38d9dc5811e9a1c176.png");
+    background-size: cover;
+    height: 600px;
 }
 /*====================================
         END OF CARS.CSS
